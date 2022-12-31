@@ -7,7 +7,7 @@ const sendEmail = async (options) => {
     service: process.env.SMPT_SERVICE,
     // secure: true,
     auth: {
-      // type: "OAUTH2",
+      type: "OAUTH2",
       user: process.env.SMPT_MAIL,
       pass: process.env.SMPT_PASSWORD,
     },
